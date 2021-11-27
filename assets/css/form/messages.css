@@ -1,0 +1,7 @@
+/* Messages */
+.msg--error {
+  margin-top: 5px;
+
+  font-size: 12px;
+  color: #ff4e60;
+}
