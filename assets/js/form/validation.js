@@ -1,7 +1,6 @@
 // Form
-// ----
 import { isBetween, isEmail, isEmpty, isNumeric, isObjectEmpty, isOneChecked } from "../utils/helpers/validation.helpers.js"
-import { resetErrors, setError } from "./messages.js"
+import { resetErrors, setConfirmation, setError } from "./messages.js"
 
 // Declare variables
 const form = {
@@ -60,7 +59,7 @@ function validate(e) {
     return
   }
 
-  console.log("OK !")
+  setConfirmation()
 }
 
 // Adding events

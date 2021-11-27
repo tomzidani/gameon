@@ -307,6 +307,8 @@ input[data-error]::after {
   opacity: 1;
   cursor: pointer;
   transform: scale(0.7);
+
+  z-index: 2;
 }
 .close:before,
 .close:after {
@@ -324,7 +326,8 @@ input[data-error]::after {
   transform: rotate(-45deg);
 }
 .btn-submit,
-.btn-signup {
+.btn-signup,
+.btn {
   background: #fe142f;
   display: block;
   margin: 0 auto;

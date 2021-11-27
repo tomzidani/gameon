@@ -1,3 +1,5 @@
+import "./nav/nav.js"
+
 import "./modal/modal.js"
 
 import "./form/validation.js"
