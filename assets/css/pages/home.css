@@ -1,0 +1,122 @@
+/* Home */
+/* ---- */
+/* Teaser */
+.home__teaser {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin: 30px 0 50px 0;
+
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.25);
+}
+
+.home__teaser > .teaser__content {
+  position: relative;
+  min-width: 510px;
+  padding: 50px 55px 70px 55px;
+  grid-column: span 4;
+
+  background: var(--color-black-light);
+  color: var(--color-white);
+  line-height: 1.3;
+}
+
+.teaser__content > .teaser__title {
+  font-size: 96px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.teaser__content > .teaser__text {
+  margin-top: 75px;
+
+  font-size: 24px;
+}
+
+.teaser__content > .teaser__button {
+  margin-top: 70px;
+  font-size: 25px;
+}
+
+.home__teaser > .teaser__resp-button {
+  display: none;
+  margin: 30px auto 0 auto;
+}
+
+/* Image */
+.teaser__media {
+  grid-column: span 8;
+}
+
+.teaser__media > .teaser__image {
+  display: block;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+@media screen and (max-width: 990px) {
+  .home__teaser {
+    display: block;
+
+    box-shadow: unset;
+  }
+
+  .home__teaser > .teaser__content {
+    padding: 20px 0;
+    min-width: unset;
+
+    background: var(--color-white);
+    color: var(--color-black);
+  }
+
+  .home__teaser > .teaser__content > .teaser__button {
+    display: none;
+  }
+
+  .home__teaser > .teaser__content > .teaser__title,
+  .home__teaser > .teaser__content > .teaser__text {
+    display: inline-block;
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  .home__teaser > .teaser__content > .teaser__text {
+    text-align: justify;
+  }
+
+  .teaser__image {
+    border-radius: 8px;
+  }
+
+  .home__teaser > .teaser__resp-button {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .teaser__content > .teaser__title {
+    font-size: 60px;
+  }
+
+  .teaser__content > .teaser__text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .teaser__content > .teaser__title {
+    font-size: 48px;
+  }
+
+  .teaser__content > .teaser__text {
+    margin: 20px 0;
+  }
+
+  .home__teaser .teaser__button {
+    font-size: 14px;
+  }
+}

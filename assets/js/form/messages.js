@@ -14,7 +14,7 @@ export const resetErrors = () => {
 
 // Confirmation
 const form = document.querySelector('form[name="reserve"')
-const closeSpan = document.querySelector("span.close")
+const closeSpan = document.querySelector("span.modal__close")
 
 export const setConfirmation = () => {
   let confirmationMessage = '<div class="msg--success">'

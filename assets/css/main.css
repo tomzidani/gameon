@@ -1,4 +1,20 @@
-@import url("./modal/modal.css");
+/* Commons */
+/* ------- */
+@import url("./commons/reset.css");
+@import url("./commons/fonts.css");
+@import url("./commons/variables.css");
+@import url("./commons/global.css");
+@import url("./commons/messages.css");
 
-@import url("./form/input.css");
-@import url("./form/messages.css");
+/* Components */
+/* ---------- */
+@import url("./components/header.css");
+@import url("./components/footer.css");
+@import url("./components/button.css");
+@import url("./components/modal.css");
+@import url("./components/form.css");
+@import url("./components/inputs.css");
+
+/* Pages */
+/* ----- */
+@import url("./pages/home.css");

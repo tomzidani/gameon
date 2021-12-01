@@ -1,0 +1,18 @@
+/* Button */
+/* ------ */
+.btn {
+  padding: 10px 25px;
+
+  font-size: 16px;
+  font-weight: 500;
+  background: var(--color-red);
+  color: var(--color-white);
+  border: none;
+  border-radius: 8px;
+  transition: ease-in-out 0.2s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--color-red-light);
+}

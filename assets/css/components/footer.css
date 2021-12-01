@@ -1,0 +1,20 @@
+/* Footer */
+/* ----- */
+.app-footer {
+  padding: 50px 0;
+}
+
+.app-footer > .footer__copyright {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-red);
+}
+
+@media screen and (max-width: 990px) {
+  .app-footer {
+    padding: 30px 0;
+  }
+  .app-footer > .footer__copyright {
+    text-align: center;
+  }
+}

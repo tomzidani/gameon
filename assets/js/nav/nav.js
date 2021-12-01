@@ -1,10 +1,10 @@
 // Navigator
-const respNavBtn = document.querySelector("#respNavBtn")
+const navEl = document.querySelector(".header__nav")
+const navBtn = document.querySelector(".header__nav-responsive")
 
-const editNav = () => {
-  const x = document.getElementById("myTopnav")
-
-  x.className === "topnav" ? (x.className += " responsive") : (x.className = "topnav")
+const toggleNav = () => {
+  navEl.classList.toggle("opened")
+  navBtn.classList.toggle("opened")
 }
 
-respNavBtn.addEventListener("click", editNav)
+navBtn.addEventListener("click", toggleNav)

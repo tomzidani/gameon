@@ -1,7 +1,7 @@
 // Modal
-const modalbg = document.querySelector(".bground")
-const modalBtn = document.querySelectorAll(".modal-btn")
-const modalCloseBtn = document.querySelector(".bground span.close")
+const modalbg = document.querySelector(".app-modal")
+const modalBtn = document.querySelectorAll(".teaser__button")
+const modalCloseBtn = document.querySelector(".app-modal span.modal__close")
 
 function launchModal() {
   modalbg.style.display = "block"
