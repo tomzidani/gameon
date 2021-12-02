@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>GameOn – Réservation</title>
 
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon" />
   </head>
   <body>
     <main class="app-home">
+      <!-- Header -->
       <header class="app-header">
         <div class="header__wrapper">
-          <img src="./assets/img/logo.png" class="header__logo" />
+          <img src="./assets/img/logo.png" class="header__logo" alt="GameOn" />
           <div class="header__nav-responsive">
             <div></div>
           </div>
@@ -27,6 +29,8 @@
           </nav>
         </div>
       </header>
+
+      <!-- Teaser -->
       <section class="home__teaser">
         <div class="teaser__content">
           <h1 class="teaser__title">
@@ -37,11 +41,13 @@
           <button class="btn teaser__button">Je m'inscris</button>
         </div>
         <div class="teaser__media">
-          <img src="./assets/img/bg_img.jpg" class="teaser__image" />
+          <img src="./assets/img/bg_img.jpg" class="teaser__image" alt="Évènement gaming" />
         </div>
         <button class="btn teaser__button teaser__resp-button">Je m'inscris</button>
       </section>
-      <section class="app-modal">
+
+      <!-- Modal -->
+      <div class="app-modal">
         <div class="modal__content">
           <span class="modal__close"></span>
           <div class="modal__body">
@@ -104,11 +110,13 @@
             </form>
           </div>
         </div>
-      </section>
+      </div>
+
+      <!-- Footer -->
       <footer class="app-footer">
         <p class="footer__copyright">Copyright 2014 - 2020, GameOn Inc.</p>
       </footer>
     </main>
-    <script src="./assets/js/main.js" type="module" defer></script>
+    <script src="./assets/js/main.js" type="module"></script>
   </body>
 </html>

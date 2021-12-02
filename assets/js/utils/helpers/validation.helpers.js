@@ -24,3 +24,11 @@ export const isOneChecked = (arr) => {
 export const isObjectEmpty = (obj) => {
   return Object.values(obj).every((val) => val.length === 0)
 }
+
+export const isName = (val) => {
+  return /^[a-zA-Z ]+$/.test(val)
+}
+
+export const isDateGreaterThanToday = (val) => {
+  return val > new Date().toISOString().split("T")[0]
+}
